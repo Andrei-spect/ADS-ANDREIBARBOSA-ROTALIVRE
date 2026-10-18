@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Veículos · Rota Livre</title>
+    <link rel="stylesheet" href="css/rotalivre.css">
+    <link rel="stylesheet" href="css/scroll-animations.css">
+    <script src="js/scroll-animations.js"></script>
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="side">
+            <div class="logo"><i><svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                        <circle cx="6" cy="6" r="2.5" />
+                        <circle cx="18" cy="18" r="2.5" />
+                        <path d="M8.5 6H15a3 3 0 010 6H9a3 3 0 000 6h6.5" />
+                    </svg></i>rota livre</div>
+            <div class="unit"><b>São Paulo · Centro</b><small>Unidade principal</small></div>
+            <div class="lbl">GESTÃO</div>
+            <nav><a href="admin-visao-geral.html" class=""><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <rect x="3" y="3" width="7" height="7" rx="1" />
+                        <rect x="14" y="3" width="7" height="7" rx="1" />
+                        <rect x="3" y="14" width="7" height="7" rx="1" />
+                        <rect x="14" y="14" width="7" height="7" rx="1" />
+                    </svg>Visão geral</a><a href="admin-locacoes.html" class=""><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <rect x="3" y="4" width="18" height="18" rx="2" />
+                        <path d="M16 2v4M8 2v4M3 10h18" />
+                    </svg>Locações</a><a href="admin-veiculos.html" class="on"><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <path d="M5 17h14M3 13l2-6h14l2 6v4H3z" />
+                        <circle cx="7.5" cy="17" r="1.5" />
+                        <circle cx="16.5" cy="17" r="1.5" />
+                    </svg>Veículos</a><a href="admin-clientes.html" class=""><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <circle cx="9" cy="8" r="3.5" />
+                        <path d="M2 21c0-4 3-6 7-6s7 2 7 6" />
+                    </svg>Clientes</a><a href="admin-categorias.html" class=""><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <path d="M12 2l10 5-10 5L2 7z" />
+                        <path d="M2 12l10 5 10-5M2 17l10 5 10-5" />
+                    </svg>Categorias</a></nav>
+            <div class="help"><svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M9.5 9a2.5 2.5 0 015 .5c0 2-2.5 2-2.5 4M12 17h.01" />
+                </svg><b>Precisa de uma mão?</b>Consulte o guia da operação.<br><a href="#">Acessar central de ajuda
+                    ↗</a></div>
+            <div class="env"><svg class="i" viewBox="0 0 24 24" style="width:16px;height:16px">
+                    <path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z" />
+                </svg>Ambiente administrativo</div>
+        </aside>
+        <div>
+            <div class="top"><span class="bc">Administração / <b>Veículos</b></span>
+                <div class="user"><svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                        <path d="M6 16V11a6 6 0 0112 0v5l2 2H4zM10 21h4" />
+                    </svg><span class="av">AB</span>
+                    <div><b>Andrei Barbosa</b><small>ADMIN · Gestora da unidade</small></div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="ph" data-reveal="up">
+                    <div>
+                        <h1>Veículos</h1>
+                        <p>Sua frota organizada, da categoria à disponibilidade.</p>
+                    </div><a class="btn" href="#"><svg class="i" viewBox="0 0 24 24" style="width:16px;height:16px">
+                            <path d="M12 5v14M5 12h14" />
+                        </svg> Criar veículo</a>
+                </div>
+                <div class="card row" style="padding:12px 20px;gap:22px" data-reveal="up"><b>8 veículos
+                        cadastrados</b><span style="color:var(--g)">● 6 disponíveis</span><span
+                        style="color:var(--amt)">● 2 locados</span><span class="mu">4 categorias</span></div>
+                <div class="two r" style="margin-top:18px">
+                    <div>
+                        <div class="row">
+                            <div class="srch"><svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                                    <circle cx="11" cy="11" r="7" />
+                                    <path d="M20 20l-4-4" />
+                                </svg>Buscar por placa ou modelo</div>
+                            <div class="in" style="min-width:190px">Todas as categorias<svg class="i"
+                                    viewBox="0 0 24 24" style="width:16px;height:16px">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg></div>
+                        </div>
+                        <div class="tabs"><span class="on">Todos (8)</span><span>Disponíveis (6)</span><span>Locados
+                                (2)</span></div>
+                        <div class="tw">
+                            <table>
+                                <tr>
+                                    <th>Modelo / ano</th>
+                                    <th>Placa</th>
+                                    <th>Categoria</th>
+                                    <th>Diária</th>
+                                    <th>Status</th>
+                                    <th>Ações</th>
+                                </tr>
+                                <tr class=sel>
+                                    <td><b>Chevrolet Onix</b><small>2025 · Automático</small></td>
+                                    <td>FTR-2A19</td>
+                                    <td>Econômico</td>
+                                    <td>R$ 150,00</td>
+                                    <td><span class="b gn">Disponível</span></td>
+                                    <td><span class="ic"><svg class="i" viewBox="0 0 24 24"
+                                                style="width:16px;height:16px">
+                                                <path d="M4 20l1-4L17 4l3 3L8 19z" />
+                                            </svg><span class="del"><svg class="i" viewBox="0 0 24 24"
+                                                    style="width:16px;height:16px">
+                                                    <path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" />
+                                                </svg></span></span></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Hyundai HB20</b><small>2025 · Manual</small></td>
+                                    <td>GHL-4B28</td>
+                                    <td>Econômico</td>
+                                    <td>R$ 150,00</td>
+                                    <td><span class="b am">Locado</span></td>
+                                    <td><span class="ic"><svg class="i" viewBox="0 0 24 24"
+                                                style="width:16px;height:16px">
+                                                <path d="M4 20l1-4L17 4l3 3L8 19z" />
+                                            </svg><span class="del"><svg class="i" viewBox="0 0 24 24"
+                                                    style="width:16px;height:16px">
+                                                    <path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" />
+                                                </svg></span></span></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Volkswagen Polo</b><small>2024 · Automático</small></td>
+                                    <td>JKM-6C31</td>
+                                    <td>Compacto</td>
+                                    <td>R$ 180,00</td>
+                                    <td><span class="b gn">Disponível</span></td>
+                                    <td><span class="ic"><svg class="i" viewBox="0 0 24 24"
+                                                style="width:16px;height:16px">
+                                                <path d="M4 20l1-4L17 4l3 3L8 19z" />
+                                            </svg><span class="del"><svg class="i" viewBox="0 0 24 24"
+                                                    style="width:16px;height:16px">
+                                                    <path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" />
+                                                </svg></span></span></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Fiat Argo</b><small>2024 · Manual</small></td>
+                                    <td>LPQ-8D42</td>
+                                    <td>Compacto</td>
+                                    <td>R$ 180,00</td>
+                                    <td><span class="b gn">Disponível</span></td>
+                                    <td><span class="ic"><svg class="i" viewBox="0 0 24 24"
+                                                style="width:16px;height:16px">
+                                                <path d="M4 20l1-4L17 4l3 3L8 19z" />
+                                            </svg><span class="del"><svg class="i" viewBox="0 0 24 24"
+                                                    style="width:16px;height:16px">
+                                                    <path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" />
+                                                </svg></span></span></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Jeep Renegade</b><small>2025 · Automático</small></td>
+                                    <td>NRS-1E53</td>
+                                    <td>SUV</td>
+                                    <td>R$ 280,00</td>
+                                    <td><span class="b am">Locado</span></td>
+                                    <td><span class="ic"><svg class="i" viewBox="0 0 24 24"
+                                                style="width:16px;height:16px">
+                                                <path d="M4 20l1-4L17 4l3 3L8 19z" />
+                                            </svg><span class="del"><svg class="i" viewBox="0 0 24 24"
+                                                    style="width:16px;height:16px">
+                                                    <path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" />
+                                                </svg></span></span></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Volkswagen T-Cross</b><small>2025 · Automático</small></td>
+                                    <td>PTU-3F64</td>
+                                    <td>SUV</td>
+                                    <td>R$ 280,00</td>
+                                    <td><span class="b gn">Disponível</span></td>
+                                    <td><span class="ic"><svg class="i" viewBox="0 0 24 24"
+                                                style="width:16px;height:16px">
+                                                <path d="M4 20l1-4L17 4l3 3L8 19z" />
+                                            </svg><span class="del"><svg class="i" viewBox="0 0 24 24"
+                                                    style="width:16px;height:16px">
+                                                    <path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" />
+                                                </svg></span></span></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Toyota Corolla</b><small>2025 · Automático</small></td>
+                                    <td>RVW-5G75</td>
+                                    <td>Sedã</td>
+                                    <td>R$ 240,00</td>
+                                    <td><span class="b gn">Disponível</span></td>
+                                    <td><span class="ic"><svg class="i" viewBox="0 0 24 24"
+                                                style="width:16px;height:16px">
+                                                <path d="M4 20l1-4L17 4l3 3L8 19z" />
+                                            </svg><span class="del"><svg class="i" viewBox="0 0 24 24"
+                                                    style="width:16px;height:16px">
+                                                    <path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" />
+                                                </svg></span></span></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Nissan Versa</b><small>2024 · Automático</small></td>
+                                    <td>SXY-7H86</td>
+                                    <td>Sedã</td>
+                                    <td>R$ 240,00</td>
+                                    <td><span class="b gn">Disponível</span></td>
+                                    <td><span class="ic"><svg class="i" viewBox="0 0 24 24"
+                                                style="width:16px;height:16px">
+                                                <path d="M4 20l1-4L17 4l3 3L8 19z" />
+                                            </svg><span class="del"><svg class="i" viewBox="0 0 24 24"
+                                                    style="width:16px;height:16px">
+                                                    <path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" />
+                                                </svg></span></span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="row sp mu" style="margin-top:12px"><span>Exibindo 8 de 8 registros</span><span
+                                class="b" style="background:var(--mint);color:var(--g)">1</span></div>
+                        <p class="hint" style="margin-top:10px">A disponibilidade por período é conferida ao criar uma
+                            locação.</p>
+                    </div>
+                    <div class="card" data-reveal="up">
+                        <h3>Editar veículo</h3><small style="margin-bottom:14px">Chevrolet Onix · FTR-2A19</small>
+                        <div class="f"><label>Modelo *</label>
+                            <div class="in"><span>Chevrolet Onix</span></div>
+                        </div>
+                        <div class="f2">
+                            <div class="f"><label>Placa *</label>
+                                <div class="in"><span>FTR-2A19</span></div>
+                            </div>
+                            <div class="f"><label>Ano *</label>
+                                <div class="in"><span>2025</span></div>
+                            </div>
+                        </div>
+                        <div class="f"><label>Categoria *</label>
+                            <div class="in"><span>Econômico</span><svg class="i" viewBox="0 0 24 24"
+                                    style="width:16px;height:16px">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg></div>
+                        </div>
+                        <div class="f"><label>Transmissão *</label>
+                            <div class="in"><span>Automático</span><svg class="i" viewBox="0 0 24 24"
+                                    style="width:16px;height:16px">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg></div>
+                        </div>
+                        <div class="f"><label>Diária (R$) *</label>
+                            <div class="in"><span>150,00</span></div>
+                        </div>
+                        <div class="f"><label>Situação da frota *</label>
+                            <div class="in"><span>Ativo</span><svg class="i" viewBox="0 0 24 24"
+                                    style="width:16px;height:16px">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg></div>
+                        </div>
+                        <p class="hint">A diária é sugerida pela categoria e pode ser ajustada por veículo.</p>
+                        <div class="dv"></div>
+                        <div class="row"><a class="btn o">Cancelar</a><a class="btn">Salvar alterações</a></div>
+                        <p class="hint" style="margin-top:12px">* Campos obrigatórios · Placa única por veículo.</p>
+                    </div>
+                </div>
+                <div class="row sp mu" style="margin-top:28px;font-size:12px"><span>Rota Livre © 2026</span><span>Gestão
+                        simples. Caminhos livres.</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

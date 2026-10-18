@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Categorias · Rota Livre</title>
+    <link rel="stylesheet" href="css/rotalivre.css">
+    <link rel="stylesheet" href="css/scroll-animations.css">
+    <script src="js/scroll-animations.js"></script>
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="side">
+            <div class="logo"><i><svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                        <circle cx="6" cy="6" r="2.5" />
+                        <circle cx="18" cy="18" r="2.5" />
+                        <path d="M8.5 6H15a3 3 0 010 6H9a3 3 0 000 6h6.5" />
+                    </svg></i>rota livre</div>
+            <div class="unit"><b>São Paulo · Centro</b><small>Unidade principal</small></div>
+            <div class="lbl">GESTÃO</div>
+            <nav><a href="admin-visao-geral.html" class=""><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <rect x="3" y="3" width="7" height="7" rx="1" />
+                        <rect x="14" y="3" width="7" height="7" rx="1" />
+                        <rect x="3" y="14" width="7" height="7" rx="1" />
+                        <rect x="14" y="14" width="7" height="7" rx="1" />
+                    </svg>Visão geral</a><a href="admin-locacoes.html" class=""><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <rect x="3" y="4" width="18" height="18" rx="2" />
+                        <path d="M16 2v4M8 2v4M3 10h18" />
+                    </svg>Locações</a><a href="admin-veiculos.html" class=""><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <path d="M5 17h14M3 13l2-6h14l2 6v4H3z" />
+                        <circle cx="7.5" cy="17" r="1.5" />
+                        <circle cx="16.5" cy="17" r="1.5" />
+                    </svg>Veículos</a><a href="admin-clientes.html" class=""><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <circle cx="9" cy="8" r="3.5" />
+                        <path d="M2 21c0-4 3-6 7-6s7 2 7 6" />
+                    </svg>Clientes</a><a href="admin-categorias.html" class="on"><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <path d="M12 2l10 5-10 5L2 7z" />
+                        <path d="M2 12l10 5 10-5M2 17l10 5 10-5" />
+                    </svg>Categorias</a></nav>
+            <div class="help"><svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M9.5 9a2.5 2.5 0 015 .5c0 2-2.5 2-2.5 4M12 17h.01" />
+                </svg><b>Precisa de uma mão?</b>Consulte o guia da operação.<br><a href="#">Acessar central de ajuda
+                    ↗</a></div>
+            <div class="env"><svg class="i" viewBox="0 0 24 24" style="width:16px;height:16px">
+                    <path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z" />
+                </svg>Ambiente administrativo</div>
+        </aside>
+        <div>
+            <div class="top"><span class="bc">Administração / <b>Categorias</b></span>
+                <div class="user"><svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                        <path d="M6 16V11a6 6 0 0112 0v5l2 2H4zM10 21h4" />
+                    </svg><span class="av">AB</span>
+                    <div><b>Andrei Barbosa</b><small>ADMIN · Gestora da unidade</small></div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="ph" data-reveal="up">
+                    <div>
+                        <h1>Categorias</h1>
+                        <p>Organize os veículos em grupos e defina a diária de referência.</p>
+                    </div><a class="btn" href="#"><svg class="i" viewBox="0 0 24 24" style="width:16px;height:16px">
+                            <path d="M12 5v14M5 12h14" />
+                        </svg> Criar categoria</a>
+                </div>
+                <div class="card" data-reveal="up">
+                    <div class="row sp">
+                        <h3>Editar categoria · Econômico</h3><span class="hint">* Campos obrigatórios</span>
+                    </div>
+                    <div class="row" style="align-items:flex-end;margin-top:12px">
+                        <div style="flex:1">
+                            <div class="f"><label>Nome *</label>
+                                <div class="in"><span>Econômico</span></div>
+                            </div>
+                        </div>
+                        <div style="flex:2">
+                            <div class="f"><label>Descrição</label>
+                                <div class="in"><span>Essencial para o dia a dia</span></div>
+                            </div>
+                        </div>
+                        <div style="flex:1">
+                            <div class="f"><label>Diária de referência *</label>
+                                <div class="in"><span>R$ 150,00</span></div>
+                            </div>
+                        </div>
+                        <div class="row f"><a class="btn o">Cancelar</a><a class="btn">Salvar alterações</a></div>
+                    </div>
+                </div>
+                <div class="row" style="margin:18px 0">
+                    <div class="srch" style="flex:none;width:420px"><svg class="i" viewBox="0 0 24 24"
+                            style="width:18px;height:18px">
+                            <circle cx="11" cy="11" r="7" />
+                            <path d="M20 20l-4-4" />
+                        </svg>Buscar categoria por nome</div><span class="mu">Todas as categorias · 4 registros</span>
+                </div>
+                <div class="tw">
+                    <table>
+                        <tr>
+                            <th>Categoria</th>
+                            <th>Descrição</th>
+                            <th>Diária de referência</th>
+                            <th>Veículos</th>
+                            <th>Ações</th>
+                        </tr>
+                        <tr>
+                            <td><b>Econômico</b><small>Grupo da frota</small></td>
+                            <td>Essencial para o dia a dia</td>
+                            <td>R$ 150,00</td>
+                            <td><b>2 veículos</b><small>1 disponível</small></td>
+                            <td><span class="ic"><svg class="i" viewBox="0 0 24 24" style="width:16px;height:16px">
+                                        <path d="M4 20l1-4L17 4l3 3L8 19z" />
+                                    </svg><span class="del"><svg class="i" viewBox="0 0 24 24"
+                                            style="width:16px;height:16px">
+                                            <path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" />
+                                        </svg></span></span></td>
+                        </tr>
+                        <tr>
+                            <td><b>Compacto</b><small>Grupo da frota</small></td>
+                            <td>Praticidade na cidade</td>
+                            <td>R$ 180,00</td>
+                            <td><b>2 veículos</b><small>2 disponíveis</small></td>
+                            <td><span class="ic"><svg class="i" viewBox="0 0 24 24" style="width:16px;height:16px">
+                                        <path d="M4 20l1-4L17 4l3 3L8 19z" />
+                                    </svg><span class="del"><svg class="i" viewBox="0 0 24 24"
+                                            style="width:16px;height:16px">
+                                            <path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" />
+                                        </svg></span></span></td>
+                        </tr>
+                        <tr class=sel>
+                            <td><b>SUV</b><small>Grupo da frota</small></td>
+                            <td>Mais espaço para viajar</td>
+                            <td>R$ 280,00</td>
+                            <td><b>2 veículos</b><small>1 disponível</small></td>
+                            <td><span class="ic"><svg class="i" viewBox="0 0 24 24" style="width:16px;height:16px">
+                                        <path d="M4 20l1-4L17 4l3 3L8 19z" />
+                                    </svg><span class="del"><svg class="i" viewBox="0 0 24 24"
+                                            style="width:16px;height:16px">
+                                            <path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" />
+                                        </svg></span></span></td>
+                        </tr>
+                        <tr>
+                            <td><b>Sedã</b><small>Grupo da frota</small></td>
+                            <td>Conforto em cada trajeto</td>
+                            <td>R$ 240,00</td>
+                            <td><b>2 veículos</b><small>2 disponíveis</small></td>
+                            <td><span class="ic"><svg class="i" viewBox="0 0 24 24" style="width:16px;height:16px">
+                                        <path d="M4 20l1-4L17 4l3 3L8 19z" />
+                                    </svg><span class="del"><svg class="i" viewBox="0 0 24 24"
+                                            style="width:16px;height:16px">
+                                            <path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" />
+                                        </svg></span></span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row sp mu" style="margin-top:12px"><span>Exibindo 4 de 4 registros</span><span class="b"
+                        style="background:var(--mint);color:var(--g)">1</span></div>
+                <div class="card row sp" style="margin-top:22px;border-color:#efc9c4" data-reveal="up">
+                    <div class="row"><span class="av" style="background:#fde8e6;color:#b03a2e;border-radius:10px"><svg
+                                class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                                <path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z" />
+                            </svg></span>
+                        <div>
+                            <h3>Excluir a categoria SUV?</h3><small>Esta ação removeria a categoria
+                                permanentemente.</small><small style="color:#b03a2e">Exclusão bloqueada: há 2 veículos e
+                                locações associadas. Preserve o histórico da operação.</small>
+                        </div>
+                    </div>
+                    <div class="row"><a class="btn o">Cancelar</a><a class="btn dis">Excluir</a></div>
+                </div>
+                <p class="hint" style="margin-top:14px"><svg class="i" viewBox="0 0 24 24"
+                        style="width:14px;height:14px">
+                        <path d="M12 2l10 5-10 5L2 7z" />
+                        <path d="M2 12l10 5 10-5M2 17l10 5 10-5" />
+                    </svg> Uma categoria pode agrupar vários veículos. Alterar a referência não modifica diárias de
+                    locações existentes.</p>
+                <div class="row sp mu" style="margin-top:28px;font-size:12px"><span>Rota Livre © 2026</span><span>Gestão
+                        simples. Caminhos livres.</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

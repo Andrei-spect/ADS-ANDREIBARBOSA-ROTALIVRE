@@ -1,0 +1,53 @@
+/* RotaLivre - animações de rolagem. Coloque em: src/main/webapp/resources/rotalivre/css/ */
+:root{
+  --rl-verde:#25775a; --rl-verde-esc:#12281f; --rl-menta:#e8f3ec;
+  --rl-ease:cubic-bezier(.22,.8,.26,1); --rl-delay:0ms;
+}
+
+/* Só esconde se o JS estiver ativo (sem JS o conteúdo continua visível) */
+.rl-js [data-reveal]{
+  opacity:0; transition:opacity .7s var(--rl-ease), transform .7s var(--rl-ease);
+  transition-delay:var(--rl-delay); will-change:opacity,transform;
+}
+.rl-js [data-reveal="up"]   {transform:translateY(32px)}
+.rl-js [data-reveal="down"] {transform:translateY(-32px)}
+.rl-js [data-reveal="left"] {transform:translateX(-40px)}
+.rl-js [data-reveal="right"]{transform:translateX(40px)}
+.rl-js [data-reveal="zoom"] {transform:scale(.92)}
+.rl-js [data-reveal].is-visible{opacity:1; transform:none}
+
+/* Barra de progresso de leitura */
+.rl-progress{position:fixed; inset:0 0 auto 0; height:3px; z-index:9999;
+  background:linear-gradient(90deg,var(--rl-verde),#e0b95c);
+  transform:scaleX(0); transform-origin:0 50%}
+
+/* Cabeçalho ganha sombra ao rolar */
+.rl-header{position:sticky; top:0; z-index:100; background:#fff; transition:box-shadow .3s, padding .3s}
+.rl-header.is-scrolled{box-shadow:0 6px 24px rgba(18,40,31,.12)}
+
+/* Hero com parallax */
+.rl-hero{position:relative; overflow:hidden; border-radius:20px; min-height:260px; color:#fff;
+  background:var(--rl-verde-esc)}
+.rl-hero__bg{position:absolute; inset:-12% 0; background:center/cover no-repeat; will-change:transform}
+.rl-hero__content{position:relative; padding:48px}
+
+/* Cards: leve elevação ao passar o mouse */
+.rl-card{background:#fff; border:1px solid #e3e8e5; border-radius:14px;
+  transition:transform .35s var(--rl-ease), box-shadow .35s var(--rl-ease)}
+.rl-card:hover{transform:translateY(-6px); box-shadow:0 14px 32px rgba(18,40,31,.14)}
+.rl-card img{width:100%; transition:transform .6s var(--rl-ease)}
+.rl-card:hover img{transform:scale(1.05)}
+
+/* Linha dos passos desenhada ao rolar */
+.rl-steps{position:relative}
+.rl-steps::before{content:""; position:absolute; left:0; right:0; top:0; height:2px;
+  background:var(--rl-verde); transform:scaleX(0); transform-origin:left;
+  transition:transform 1.2s var(--rl-ease)}
+.rl-steps.is-visible::before{transform:scaleX(1)}
+
+/* Acessibilidade: respeita quem desativa animações */
+@media (prefers-reduced-motion:reduce){
+  .rl-js [data-reveal]{opacity:1; transform:none; transition:none}
+  .rl-card,.rl-card img,.rl-steps::before{transition:none}
+  .rl-progress{display:none}
+}

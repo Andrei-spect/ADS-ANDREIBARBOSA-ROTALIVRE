@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Locações · Rota Livre</title>
+    <link rel="stylesheet" href="css/rotalivre.css">
+    <link rel="stylesheet" href="css/scroll-animations.css">
+    <script src="js/scroll-animations.js"></script>
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="side">
+            <div class="logo"><i><svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                        <circle cx="6" cy="6" r="2.5" />
+                        <circle cx="18" cy="18" r="2.5" />
+                        <path d="M8.5 6H15a3 3 0 010 6H9a3 3 0 000 6h6.5" />
+                    </svg></i>rota livre</div>
+            <div class="unit"><b>São Paulo · Centro</b><small>Unidade principal</small></div>
+            <div class="lbl">GESTÃO</div>
+            <nav><a href="admin-visao-geral.html" class=""><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <rect x="3" y="3" width="7" height="7" rx="1" />
+                        <rect x="14" y="3" width="7" height="7" rx="1" />
+                        <rect x="3" y="14" width="7" height="7" rx="1" />
+                        <rect x="14" y="14" width="7" height="7" rx="1" />
+                    </svg>Visão geral</a><a href="admin-locacoes.html" class="on"><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <rect x="3" y="4" width="18" height="18" rx="2" />
+                        <path d="M16 2v4M8 2v4M3 10h18" />
+                    </svg>Locações</a><a href="admin-veiculos.html" class=""><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <path d="M5 17h14M3 13l2-6h14l2 6v4H3z" />
+                        <circle cx="7.5" cy="17" r="1.5" />
+                        <circle cx="16.5" cy="17" r="1.5" />
+                    </svg>Veículos</a><a href="admin-clientes.html" class=""><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <circle cx="9" cy="8" r="3.5" />
+                        <path d="M2 21c0-4 3-6 7-6s7 2 7 6" />
+                    </svg>Clientes</a><a href="admin-categorias.html" class=""><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <path d="M12 2l10 5-10 5L2 7z" />
+                        <path d="M2 12l10 5 10-5M2 17l10 5 10-5" />
+                    </svg>Categorias</a></nav>
+            <div class="help"><svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M9.5 9a2.5 2.5 0 015 .5c0 2-2.5 2-2.5 4M12 17h.01" />
+                </svg><b>Precisa de uma mão?</b>Consulte o guia da operação.<br><a href="#">Acessar central de ajuda
+                    ↗</a></div>
+            <div class="env"><svg class="i" viewBox="0 0 24 24" style="width:16px;height:16px">
+                    <path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z" />
+                </svg>Ambiente administrativo</div>
+        </aside>
+        <div>
+            <div class="top"><span class="bc">Administração / <b>Locações</b></span>
+                <div class="user"><svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                        <path d="M6 16V11a6 6 0 0112 0v5l2 2H4zM10 21h4" />
+                    </svg><span class="av">AB</span>
+                    <div><b>Andrei Barbosa</b><small>ADMIN · Gestora da unidade</small></div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="ph" data-reveal="up">
+                    <div>
+                        <h1>Locações</h1>
+                        <p>Acompanhe cada jornada, da reserva à devolução.</p>
+                    </div><a class="btn" href="admin-locacao-nova.html"><svg class="i" viewBox="0 0 24 24"
+                            style="width:16px;height:16px">
+                            <path d="M12 5v14M5 12h14" />
+                        </svg> Nova locação</a>
+                </div>
+                <div class="card" data-reveal="up">
+                    <div class="row">
+                        <div class="srch"><svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                                <circle cx="11" cy="11" r="7" />
+                                <path d="M20 20l-4-4" />
+                            </svg>Buscar por cliente, placa ou nº da locação</div>
+                        <div class="in" style="min-width:250px"><svg class="i" viewBox="0 0 24 24"
+                                style="width:16px;height:16px">
+                                <rect x="3" y="4" width="18" height="18" rx="2" />
+                                <path d="M16 2v4M8 2v4M3 10h18" />
+                            </svg>&nbsp;01/09/2026 — 31/10/2026<svg class="i" viewBox="0 0 24 24"
+                                style="width:16px;height:16px">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg></div><a class="btn o">Filtrar</a>
+                    </div>
+                    <div class="tabs"><span class="on">Todas (8)</span><span>Reservadas (2)</span><span>Em andamento
+                            (2)</span><span>Concluídas (3)</span><span>Canceladas (1)</span></div>
+                </div>
+                <div class="row sp" style="margin:20px 0 10px">
+                    <h3>Todas as locações</h3><span class="mu">Mais recentes primeiro ↓</span>
+                </div>
+                <div class="tw">
+                    <table>
+                        <tr>
+                            <th>Locação / cliente</th>
+                            <th>Veículo</th>
+                            <th>Retirada → devolução</th>
+                            <th>Duração</th>
+                            <th>Total previsto</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td><b>Ana Beatriz Souza</b><small>LOC-2026-008</small></td>
+                            <td><b>Chevrolet Onix</b><small>FTR-2A19</small></td>
+                            <td><b>15/10/2026</b><small>→ 18/10/2026</small></td>
+                            <td>3 diárias</td>
+                            <td>R$ 450,00</td>
+                            <td><span class="b am">Reservada</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>Lucas Almeida</b><small>LOC-2026-007</small></td>
+                            <td><b>Volkswagen Polo</b><small>JKM-6C31</small></td>
+                            <td><b>15/10/2026</b><small>→ 17/10/2026</small></td>
+                            <td>2 diárias</td>
+                            <td>R$ 360,00</td>
+                            <td><span class="b am">Reservada</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>Mariana Costa</b><small>LOC-2026-006</small></td>
+                            <td><b>Jeep Renegade</b><small>NRS-1E53</small></td>
+                            <td><b>12/10/2026</b><small>→ 16/10/2026</small></td>
+                            <td>4 diárias</td>
+                            <td>R$ 1.120,00</td>
+                            <td><span class="b bl">Em andamento</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>Rafael Oliveira</b><small>LOC-2026-005</small></td>
+                            <td><b>Hyundai HB20</b><small>GHL-4B28</small></td>
+                            <td><b>13/10/2026</b><small>→ 16/10/2026</small></td>
+                            <td>3 diárias</td>
+                            <td>R$ 450,00</td>
+                            <td><span class="b bl">Em andamento</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>Ana Beatriz Souza</b><small>LOC-2026-004</small></td>
+                            <td><b>Toyota Corolla</b><small>RVW-5G75</small></td>
+                            <td><b>05/10/2026</b><small>→ 08/10/2026</small></td>
+                            <td>3 diárias</td>
+                            <td>R$ 720,00</td>
+                            <td><span class="b gr">Concluída</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>Bruno Ferreira</b><small>LOC-2026-003</small></td>
+                            <td><b>Fiat Argo</b><small>LPQ-8D42</small></td>
+                            <td><b>02/10/2026</b><small>→ 04/10/2026</small></td>
+                            <td>2 diárias</td>
+                            <td>R$ 360,00</td>
+                            <td><span class="b gr">Concluída</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>Ana Beatriz Souza</b><small>LOC-2026-002</small></td>
+                            <td><b>Volkswagen T-Cross</b><small>PTU-3F64</small></td>
+                            <td><b>25/09/2026</b><small>→ 28/09/2026</small></td>
+                            <td>3 diárias</td>
+                            <td>R$ 840,00<small>Não cobrado</small></td>
+                            <td><span class="b rd">Cancelada</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>Ana Beatriz Souza</b><small>LOC-2026-001</small></td>
+                            <td><b>Chevrolet Onix</b><small>FTR-2A19</small></td>
+                            <td><b>10/09/2026</b><small>→ 12/09/2026</small></td>
+                            <td>2 diárias</td>
+                            <td>R$ 300,00</td>
+                            <td><span class="b gr">Concluída</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row sp mu" style="margin-top:12px"><span>Exibindo 8 de 8 registros</span><span class="b"
+                        style="background:var(--mint);color:var(--g)">1</span></div>
+                <p class="hint" style="margin-top:10px">Os valores refletem a diária contratada. Locações canceladas não
+                    compõem a receita realizada.</p>
+                <div class="row sp mu" style="margin-top:28px;font-size:12px"><span>Rota Livre © 2026</span><span>Gestão
+                        simples. Caminhos livres.</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

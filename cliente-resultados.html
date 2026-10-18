@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Rota Livre · Rota Livre</title>
+    <link rel="stylesheet" href="css/rotalivre.css">
+    <link rel="stylesheet" href="css/scroll-animations.css">
+    <script src="js/scroll-animations.js"></script>
+</head>
+
+<body class="cl">
+    <div class="top"><a href="cliente-home.html" class="logo"><i><svg class="i" viewBox="0 0 24 24"
+                    style="width:18px;height:18px">
+                    <circle cx="6" cy="6" r="2.5" />
+                    <circle cx="18" cy="18" r="2.5" />
+                    <path d="M8.5 6H15a3 3 0 010 6H9a3 3 0 000 6h6.5" />
+                </svg></i>rota livre</a>
+        <div class="nav"><a href="cliente-home.html" class="on">Alugar um carro</a><a href="cliente-locacoes.html"
+                class="">Minhas locações</a><a href="cliente-home.html" class="">Ajuda</a></div>
+        <div class="user"><span class="av">AS</span>
+            <div><b>Olá, Ana</b><small>Minha conta</small></div>
+        </div>
+    </div>
+    <div class="wrap">
+        <p class="hint">Alugar um carro / Resultados da busca</p>
+        <div style="margin:8px 0 18px">
+            <h1 style="font-size:30px">Encontre o carro para seus planos</h1>
+            <p class="mu">Compare os veículos disponíveis para a sua próxima viagem.</p>
+        </div>
+        <div class="card" data-reveal="up">
+            <div class="sbar">
+                <div class="f" style="margin:0"><label>Local de retirada e devolução</label>
+                    <div class="in"><span>São Paulo · Centro</span><svg class="i" viewBox="0 0 24 24"
+                            style="width:16px;height:16px">
+                            <path d="M12 22s7-6 7-12a7 7 0 10-14 0c0 6 7 12 7 12z" />
+                            <circle cx="12" cy="10" r="2.5" />
+                        </svg></div>
+                </div>
+                <div class="f" style="margin:0"><label>Retirada</label>
+                    <div class="in"><span>19/10/2026 &nbsp;•&nbsp; 09:00</span><svg class="i" viewBox="0 0 24 24"
+                            style="width:16px;height:16px">
+                            <rect x="3" y="4" width="18" height="18" rx="2" />
+                            <path d="M16 2v4M8 2v4M3 10h18" />
+                        </svg></div>
+                </div>
+                <div class="f" style="margin:0"><label>Devolução</label>
+                    <div class="in"><span>22/10/2026 &nbsp;•&nbsp; 09:00</span><svg class="i" viewBox="0 0 24 24"
+                            style="width:16px;height:16px">
+                            <rect x="3" y="4" width="18" height="18" rx="2" />
+                            <path d="M16 2v4M8 2v4M3 10h18" />
+                        </svg></div>
+                </div><a class="btn" style="padding:13px 22px" href="cliente-resultados.html">Atualizar busca <svg
+                        class="i" viewBox="0 0 24 24" style="width:16px;height:16px">
+                        <circle cx="11" cy="11" r="7" />
+                        <path d="M20 20l-4-4" />
+                    </svg></a>
+            </div>
+            <p class="hint" style="margin-top:10px">Devolução na mesma unidade · 3 diárias de 24 horas · Horário de
+                Brasília</p>
+        </div>
+        <div class="two" style="grid-template-columns:230px 1fr;margin-top:20px">
+            <div>
+                <div class="fil" data-reveal="up">
+                    <h3 style="margin-bottom:12px">Filtrar veículos</h3><b>Categoria</b><label><span class="box on"><svg
+                                class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                                <path d="M5 12l5 5L20 7" />
+                            </svg></span>Todas<em>3</em></label><label><span
+                            class="box"></span>Econômico<em>1</em></label><label><span
+                            class="box"></span>Compacto<em>1</em></label><label><span
+                            class="box"></span>SUV<em>0</em></label><label><span
+                            class="box"></span>Sedã<em>1</em></label>
+                    <div class="dv"></div><b>Valor da diária</b>
+                    <div class="rng"></div><small>R$ 150,00 — R$ 280,00</small>
+                    <div class="dv"></div><b>Transmissão</b><label><span
+                            class="box"></span>Automático</label><label><span class="box"></span>Manual</label>
+                    <div class="dv"></div><label><span class="box on"><svg class="i" viewBox="0 0 24 24"
+                                style="width:18px;height:18px">
+                                <path d="M5 12l5 5L20 7" />
+                            </svg></span>Só disponíveis</label><a style="color:var(--g);font-weight:600">Limpar
+                        filtros</a>
+                </div>
+                <p class="hint" style="margin-top:10px">Os valores exibidos são para o período completo. Adicionais são
+                    escolhidos na revisão.</p>
+            </div>
+            <div>
+                <div class="row sp" style="margin-bottom:12px"><b>3 veículos disponíveis · 3 diárias</b><span class="in"
+                        style="min-width:170px">Menor diária primeiro <svg class="i" viewBox="0 0 24 24"
+                            style="width:16px;height:16px">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg></span></div>
+                <div class="card res" data-reveal="up">
+                    <div class="car "
+                        style="background-image:url(data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%20200%20100%27%3E%3Cpath%20d=%27M20%2070%20L30%2050%20Q45%2030%2075%2030%20L125%2030%20Q155%2032%20170%2055%20L185%2062%20L185%2078%20L15%2078%20Z%27%20fill=%27%23b8bec4%27/%3E%3Cpath%20d=%27M55%2036%20L78%2036%20L78%2052%20L45%2052%20Z%20M86%2036%20L122%2036%20Q142%2038%20152%2052%20L86%2052%20Z%27%20fill=%27%23e8eef0%27%20opacity=%27.85%27/%3E%3Ccircle%20cx=%2755%27%20cy=%2778%27%20r=%2713%27%20fill=%27%23222%27/%3E%3Ccircle%20cx=%27150%27%20cy=%2778%27%20r=%2713%27%20fill=%27%23222%27/%3E%3Ccircle%20cx=%2755%27%20cy=%2778%27%20r=%276%27%20fill=%27%23aaa%27/%3E%3Ccircle%20cx=%27150%27%20cy=%2778%27%20r=%276%27%20fill=%27%23aaa%27/%3E%3C/svg%3E)">
+                    </div>
+                    <div><small>Econômico · 2025</small>
+                        <h2 style="margin:2px 0 6px">Chevrolet Onix</h2><span class="mu">Automático ·
+                            Ar-condicionado</span>
+                        <div class="row mu" style="margin:10px 0;gap:16px">5 pessoas &nbsp; 2 malas</div><span
+                            class="b gn">Disponível no período</span>
+                    </div>
+                    <div class="pr"><strong>R$ 150,00</strong> <small>/ dia</small><b style="display:block">R$ 450,00
+                            por 3 diárias</b><small style="margin-bottom:10px">Sem adicionais · taxas R$ 0,00</small><a
+                            class="btn w" href="cliente-veiculo.html">Selecionar veículo <svg class="i"
+                                viewBox="0 0 24 24" style="width:16px;height:16px">
+                                <path d="M5 12h14M13 6l6 6-6 6" />
+                            </svg></a><a href="cliente-veiculo.html"
+                            style="color:var(--g);font-size:12px;display:block;margin-top:8px">Ver detalhes e
+                            condições</a></div>
+                </div>
+                <div class="card res" data-reveal="up">
+                    <div class="car "
+                        style="background-image:url(data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%20200%20100%27%3E%3Cpath%20d=%27M20%2070%20L30%2050%20Q45%2030%2075%2030%20L125%2030%20Q155%2032%20170%2055%20L185%2062%20L185%2078%20L15%2078%20Z%27%20fill=%27%234a4f55%27/%3E%3Cpath%20d=%27M55%2036%20L78%2036%20L78%2052%20L45%2052%20Z%20M86%2036%20L122%2036%20Q142%2038%20152%2052%20L86%2052%20Z%27%20fill=%27%23e8eef0%27%20opacity=%27.85%27/%3E%3Ccircle%20cx=%2755%27%20cy=%2778%27%20r=%2713%27%20fill=%27%23222%27/%3E%3Ccircle%20cx=%27150%27%20cy=%2778%27%20r=%2713%27%20fill=%27%23222%27/%3E%3Ccircle%20cx=%2755%27%20cy=%2778%27%20r=%276%27%20fill=%27%23aaa%27/%3E%3Ccircle%20cx=%27150%27%20cy=%2778%27%20r=%276%27%20fill=%27%23aaa%27/%3E%3C/svg%3E)">
+                    </div>
+                    <div><small>Compacto · 2024</small>
+                        <h2 style="margin:2px 0 6px">Volkswagen Polo</h2><span class="mu">Automático ·
+                            Ar-condicionado</span>
+                        <div class="row mu" style="margin:10px 0;gap:16px">5 pessoas &nbsp; 2 malas</div><span
+                            class="b gn">Disponível no período</span>
+                    </div>
+                    <div class="pr"><strong>R$ 180,00</strong> <small>/ dia</small><b style="display:block">R$ 540,00
+                            por 3 diárias</b><small style="margin-bottom:10px">Sem adicionais · taxas R$ 0,00</small><a
+                            class="btn w" href="cliente-veiculo.html">Selecionar veículo <svg class="i"
+                                viewBox="0 0 24 24" style="width:16px;height:16px">
+                                <path d="M5 12h14M13 6l6 6-6 6" />
+                            </svg></a><a href="cliente-veiculo.html"
+                            style="color:var(--g);font-size:12px;display:block;margin-top:8px">Ver detalhes e
+                            condições</a></div>
+                </div>
+                <div class="card res" data-reveal="up">
+                    <div class="car "
+                        style="background-image:url(data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%20200%20100%27%3E%3Cpath%20d=%27M20%2070%20L30%2050%20Q45%2030%2075%2030%20L125%2030%20Q155%2032%20170%2055%20L185%2062%20L185%2078%20L15%2078%20Z%27%20fill=%27%238d949a%27/%3E%3Cpath%20d=%27M55%2036%20L78%2036%20L78%2052%20L45%2052%20Z%20M86%2036%20L122%2036%20Q142%2038%20152%2052%20L86%2052%20Z%27%20fill=%27%23e8eef0%27%20opacity=%27.85%27/%3E%3Ccircle%20cx=%2755%27%20cy=%2778%27%20r=%2713%27%20fill=%27%23222%27/%3E%3Ccircle%20cx=%27150%27%20cy=%2778%27%20r=%2713%27%20fill=%27%23222%27/%3E%3Ccircle%20cx=%2755%27%20cy=%2778%27%20r=%276%27%20fill=%27%23aaa%27/%3E%3Ccircle%20cx=%27150%27%20cy=%2778%27%20r=%276%27%20fill=%27%23aaa%27/%3E%3C/svg%3E)">
+                    </div>
+                    <div><small>Sedã · 2025</small>
+                        <h2 style="margin:2px 0 6px">Toyota Corolla</h2><span class="mu">Automático ·
+                            Ar-condicionado</span>
+                        <div class="row mu" style="margin:10px 0;gap:16px">5 pessoas &nbsp; 3 malas</div><span
+                            class="b gn">Disponível no período</span>
+                    </div>
+                    <div class="pr"><strong>R$ 240,00</strong> <small>/ dia</small><b style="display:block">R$ 720,00
+                            por 3 diárias</b><small style="margin-bottom:10px">Sem adicionais · taxas R$ 0,00</small><a
+                            class="btn w" href="cliente-veiculo.html">Selecionar veículo <svg class="i"
+                                viewBox="0 0 24 24" style="width:16px;height:16px">
+                                <path d="M5 12h14M13 6l6 6-6 6" />
+                            </svg></a><a href="cliente-veiculo.html"
+                            style="color:var(--g);font-size:12px;display:block;margin-top:8px">Ver detalhes e
+                            condições</a></div>
+                </div>
+                <div class="card row sp" data-reveal="up">
+                    <div class="row"><span class="av" style="border-radius:10px;background:#f1f3f2;color:var(--mu)"><svg
+                                class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                                <path d="M5 17h14M3 13l2-6h14l2 6v4H3z" />
+                                <circle cx="7.5" cy="17" r="1.5" />
+                                <circle cx="16.5" cy="17" r="1.5" />
+                            </svg></span>
+                        <div><b>Hyundai HB20 · Econômico · Manual</b><small>Indisponível de 19 a 22/10. Altere as datas
+                                para consultar outro período.</small></div>
+                    </div><span class="b rd">Indisponível</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div>
+            <div class="logo" style="font-size:18px"><i><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <circle cx="6" cy="6" r="2.5" />
+                        <circle cx="18" cy="18" r="2.5" />
+                        <path d="M8.5 6H15a3 3 0 010 6H9a3 3 0 000 6h6.5" />
+                    </svg></i>rota livre</div><small>© 2026 Rota Livre</small>
+        </div><span>Mais caminhos. No seu ritmo.</span>
+        <div>
+            <div><a href="#">Central de ajuda</a><a href="#">Termos de locação</a><a href="#">Privacidade</a></div>
+            <small style="margin-top:14px;text-align:right">Demonstração de interface · Dados ilustrativos · Nenhuma
+                reserva ou cobrança realizada</small>
+        </div>
+    </div>
+</body>
+
+</html>
