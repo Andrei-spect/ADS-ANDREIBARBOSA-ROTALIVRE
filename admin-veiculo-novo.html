@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Veículos · Rota Livre</title>
+    <link rel="stylesheet" href="css/rotalivre.css">
+    <link rel="stylesheet" href="css/scroll-animations.css">
+    <script src="js/scroll-animations.js"></script>
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="side">
+            <div class="logo"><i><svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                        <circle cx="6" cy="6" r="2.5" />
+                        <circle cx="18" cy="18" r="2.5" />
+                        <path d="M8.5 6H15a3 3 0 010 6H9a3 3 0 000 6h6.5" />
+                    </svg></i>rota livre</div>
+            <div class="unit"><b>São Paulo · Centro</b><small>Unidade principal</small></div>
+            <div class="lbl">GESTÃO</div>
+            <nav><a href="admin-visao-geral.html" class=""><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <rect x="3" y="3" width="7" height="7" rx="1" />
+                        <rect x="14" y="3" width="7" height="7" rx="1" />
+                        <rect x="3" y="14" width="7" height="7" rx="1" />
+                        <rect x="14" y="14" width="7" height="7" rx="1" />
+                    </svg>Visão geral</a><a href="admin-locacoes.html" class=""><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <rect x="3" y="4" width="18" height="18" rx="2" />
+                        <path d="M16 2v4M8 2v4M3 10h18" />
+                    </svg>Locações</a><a href="admin-veiculos.html" class="on"><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <path d="M5 17h14M3 13l2-6h14l2 6v4H3z" />
+                        <circle cx="7.5" cy="17" r="1.5" />
+                        <circle cx="16.5" cy="17" r="1.5" />
+                    </svg>Veículos</a><a href="admin-clientes.html" class=""><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <circle cx="9" cy="8" r="3.5" />
+                        <path d="M2 21c0-4 3-6 7-6s7 2 7 6" />
+                    </svg>Clientes</a><a href="admin-categorias.html" class=""><svg class="i" viewBox="0 0 24 24"
+                        style="width:18px;height:18px">
+                        <path d="M12 2l10 5-10 5L2 7z" />
+                        <path d="M2 12l10 5 10-5M2 17l10 5 10-5" />
+                    </svg>Categorias</a></nav>
+            <div class="help"><svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M9.5 9a2.5 2.5 0 015 .5c0 2-2.5 2-2.5 4M12 17h.01" />
+                </svg><b>Precisa de uma mão?</b>Consulte o guia da operação.<br><a href="cliente-ajuda.html">Acessar
+                    central de ajuda ↗</a></div>
+            <div class="env"><svg class="i" viewBox="0 0 24 24" style="width:16px;height:16px">
+                    <path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z" />
+                </svg>Ambiente administrativo</div>
+        </aside>
+        <div>
+            <div class="top"><span class="bc">Administração / <b>Veículos</b></span>
+                <div class="user"><svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                        <path d="M6 16V11a6 6 0 0112 0v5l2 2H4zM10 21h4" />
+                    </svg><span class="av">AB</span>
+                    <div><b>Andrei Barbosa</b><small>ADMIN · Gestora da unidade</small></div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="ph" data-reveal="up">
+                    <div>
+                        <h1>Criar veículo</h1>
+                        <p>Cadastre um novo carro na frota e vincule à categoria.</p>
+                    </div><a class="btn o" href="admin-veiculos.html"><svg class="i" viewBox="0 0 24 24"
+                            style="width:16px;height:16px">
+                            <path d="M19 12H5M11 6l-6 6 6 6" />
+                        </svg> Voltar para veículos</a>
+                </div>
+                <div class="two r">
+                    <div class="card" data-reveal="up">
+                        <h3>Dados do veículo</h3><small style="margin-bottom:14px">Os campos com * são
+                            obrigatórios.</small>
+                        <div class="f"><label>Modelo *</label>
+                            <div class="in ph2"><span>Ex.: Chevrolet Onix</span></div>
+                        </div>
+                        <div class="f2">
+                            <div class="f"><label>Placa *</label>
+                                <div class="in ph2"><span>AAA-0A00</span></div>
+                            </div>
+                            <div class="f"><label>Ano *</label>
+                                <div class="in ph2"><span>2025</span></div>
+                            </div>
+                        </div>
+                        <div class="f2">
+                            <div class="f"><label>Categoria *</label>
+                                <div class="in ph2"><span>Selecione</span><svg class="i" viewBox="0 0 24 24"
+                                        style="width:16px;height:16px">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg></div>
+                            </div>
+                            <div class="f"><label>Transmissão *</label>
+                                <div class="in ph2"><span>Selecione</span><svg class="i" viewBox="0 0 24 24"
+                                        style="width:16px;height:16px">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg></div>
+                            </div>
+                        </div>
+                        <div class="f2">
+                            <div class="f"><label>Diária (R$) *</label>
+                                <div class="in ph2"><span>0,00</span></div>
+                            </div>
+                            <div class="f"><label>Situação da frota *</label>
+                                <div class="in"><span>Ativo</span><svg class="i" viewBox="0 0 24 24"
+                                        style="width:16px;height:16px">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg></div>
+                            </div>
+                        </div>
+                        <p class="hint">A diária é sugerida pela categoria e pode ser ajustada por veículo.</p>
+                        <div class="dv"></div>
+                        <div class="row"><a class="btn o" href="admin-veiculos.html">Cancelar</a><a class="btn"
+                                href="admin-veiculos.html">Criar veículo</a></div>
+                    </div>
+                    <div>
+                        <div class="card" data-reveal="up">
+                            <h3>Foto do veículo</h3><small style="margin-bottom:12px">Opcional</small>
+                            <div class="upl"><svg class="i" viewBox="0 0 24 24" style="width:22px;height:22px">
+                                    <path d="M12 5v14M5 12h14" />
+                                </svg>
+                                <p>Arraste uma imagem ou clique para enviar</p><small>PNG ou JPG · até 2 MB</small>
+                            </div>
+                        </div>
+                        <div class="note plain"><svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px">
+                                <path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z" />
+                            </svg><span>Placa única por veículo. A disponibilidade por período é conferida ao criar uma
+                                locação.</span></div>
+                    </div>
+                </div>
+                <div class="row sp mu" style="margin-top:28px;font-size:12px"><span>Rota Livre © 2026</span><span>Gestão
+                        simples. Caminhos livres.</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
